@@ -3,7 +3,7 @@ Raspberry Pi HAT for SDR experimenters
 
 Get the latest on the sBitx hat from https://github.com/afarhan/sbitxhat
 
-In FDIM Conference of 2024, HF Signals gifted sBitx Hat PCBs to promote experimentation with SDRs. 
+At the FDIM Conference of 2024, HF Signals gifted sBitx Hat boards to promote experimentation with SDRs. 
 This is a repository for the circuit diagram and future software drivers.
 
 The HAT has three subsystems:
@@ -13,8 +13,8 @@ The HAT has three subsystems:
 
 
 Using the Hat:
-1. The sbitxhat has been tested to work well on Raspberry Pi Zero 2 W and Raspberry Pi 4B. It is assumed that it will also work well with other models of Raspberry Pi.
-2. The WM8731 gets confused with any other device is added to the same I2C bus, hence the Si5351 uses I2C protocol over two GPIO lines by through library that toggles the bits to get it done (bit banging).
+1. The sBitx Hat has been tested to work well on Raspberry Pi Zero 2 W and Raspberry Pi 4B. It is assumed that it will also work well with other models of Raspberry Pi.
+2. The WM8731 gets confused with any other device added to the same I2C bus, hence the Si5351 uses I2C protocol over two GPIO lines through a library that toggles the bits to get it done (bit banging).
 2. To enable the audio codec, add the following line to the /boot/config.txt of the Raspberry Pi:
   dtoverlay=audioinjector-wm8731-audio
 3. To use the Si5351, add the following files to your project from https://github.com/sbitx :
